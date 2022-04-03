@@ -7,7 +7,7 @@ import {persistReducer, persistStore} from "redux-persist";
 const config = {
   key: 'root',
   storage: localforage,
-  whitelist: ['site'],
+  whitelist: ['form'],
 };
 
 const persistedReducer = persistReducer(config, rootReducer);

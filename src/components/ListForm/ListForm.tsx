@@ -16,8 +16,8 @@ class ListForm extends Component<ReduxProps> {
           <ul>
             {this.props.list.map((item, index) => (
               <div className="item">
-                <li key={index}>{`${item.name} ${item.lastName} | ${item.note} | ${item.email}`}</li>
-                <button className="buttonRemove" onClick={()=> this.removeUser(index)}> Remove </button>
+                <li key={index} data-testid="listUser">{`${item.name} ${item.lastName} | ${item.note} | ${item.email}`}</li>
+                <button className="buttonRemove" data-testid="buttonRemoveList" onClick={()=> this.removeUser(index)}> Remove </button>
               </div>
             ))}
           </ul>

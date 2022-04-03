@@ -29,7 +29,7 @@ class Inputs extends Component<InputProps> {
     const wrapperClassName = `inputForm ${state} `;
 
     if (state === "error") {
-      helper = <p className="errorHelper">{errorHelper}</p>;
+      helper = <p className="errorHelper" data-testid="error-helper">{errorHelper}</p>;
     }
     return (
       <div className={wrapperClassName}>

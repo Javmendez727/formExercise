@@ -58,12 +58,10 @@ class InputsForm extends Component<ReduxProps> {
       this.props.noteUserError
     );
   }
-  addUser(){
+  addUser() {
     this.props.addListContent(actionTypes.ADD_USER_LIST);
     this.props.resetValuesInputs(actionTypes.RESET_FORM_INPUTS);
     if (inputRef.current) inputRef.current.focus();
-
-    console.log(this.props.list)
   }
   componentDidMount() {
     if (inputRef.current) inputRef.current.focus();
@@ -135,7 +133,7 @@ const mapStateToProps = (state: ReduxState) => {
     noteUser,
     noteUserState,
     noteUserError,
-    list
+    list,
   } = form;
   return {
     nameCustomer,
@@ -151,11 +149,16 @@ const mapStateToProps = (state: ReduxState) => {
     noteUser,
     noteUserState,
     noteUserError,
-    list
+    list,
   };
 };
 
-const { enableButtonUser, updateInputContent,addListContent,resetValuesInputs } = actions;
+const {
+  enableButtonUser,
+  updateInputContent,
+  addListContent,
+  resetValuesInputs,
+} = actions;
 
 const connector = connect(mapStateToProps, {
   enableButtonUser,
