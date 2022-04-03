@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Component } from "react";
+import InputsForm from "./components/InputsForm/InputsForm";
+import ListForm from "./components/ListForm/ListForm";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="main">
+        <div className="container">
+          <header className="header">
+            <p>Form Add Users </p>
+          </header>
+          <div className="form-container">
+            <InputsForm />
+            <ListForm />
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;

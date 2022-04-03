@@ -1,0 +1,25 @@
+.inputForm-container{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 45%;
+}
+
+.buttonAdd{
+  box-sizing: border-box;
+  background: #E7F7FF ;
+  border: 0.1rem solid #CBF3F8;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  transition: background-color .5s;
+}
+
+.buttonAdd:hover {
+  background-color: #BAF4FB;
+}
+
+.buttonAdd:disabled {
+  background: #E7F7FF ;
+}

@@ -1,0 +1,75 @@
+.listForm-container{
+  display: flex;
+  width: 52%;
+}
+.buttonRemove{
+  background: #E7F7FF;
+    border: 0.1rem solid #CBF3F8;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    transition: background-color .5s;
+    margin: 0.5em 0 0.5em 0.5rem;
+  }
+.buttonRemove:hover {
+  background-color: #BAF4FB;
+}
+
+.buttonRemove:disabled {
+  background: #E7F7FF ;
+}
+.item{
+  display: flex;
+  
+}
+.list {
+    counter-reset: li; 
+    list-style: none; 
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.list ol {
+    margin: 0 0 0 2em; 
+}
+
+.list li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+}
+
+.list li:hover{
+    background: #eee;
+}
+
+.list li:hover:before{
+    transform: rotate(360deg);  
+}
+
+.list li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
