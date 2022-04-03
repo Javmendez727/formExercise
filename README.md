@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Getting Started with FormUsers Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+First thing to start with the project it is install all the libraries and dependencies with the command:
+
+### `npm install`
 
 ## Available Scripts
 
@@ -44,3 +46,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Author
+
+Jose Alonso Vallejo Mendez - April, 2022
